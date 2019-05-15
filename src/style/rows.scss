@@ -1,0 +1,73 @@
+.row-small {
+  @include flex-column;
+  @include row;
+  padding-top: 11px;
+  border-bottom: 1px solid #a3a5a9;
+  &:last-child:not(:only-child) {
+    border-bottom: none;
+  }
+  &:first-child:not(:only-child) {
+		padding-top: 0px;
+	}
+  &__title {
+    font-weight: 400;
+    font-family: Roboto Condensed, Arial Narrow, Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      color: darkgray;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+}
+
+.row-large {
+  @include flex-column;
+  @include row;
+  &__title {
+    font-weight: 700;
+    font-family: Roboto Condensed, Arial Narrow, Arial, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin: 15px 0px 15px 0px;
+    cursor: pointer;
+    &:hover {
+      color: darkgray;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+  &__text {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  &__container {
+    flex-wrap: wrap;
+  }
+}
+
+.row-video {
+  @include flex-row;
+  &:first-child:not(:only-child) {
+    border-top: 1px solid darkgray;
+	}
+  &__container {
+    @include flex-row;
+  }
+  &__image {
+    @include video-row;
+    cursor: pointer;
+  }
+  &__title {
+    @include video-row;
+    cursor: pointer;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto Condensed,Arial Narrow,Arial,sans-serif;
+  }
+}

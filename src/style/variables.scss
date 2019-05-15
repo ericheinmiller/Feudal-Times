@@ -1,0 +1,28 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin main-font {
+  font-family: Roboto Condensed,Arial Narrow,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #e90606;
+}
+
+@mixin row {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+@mixin video-row {
+  padding-right: 5px;
+  padding-top: 10px;
+  width: 50%;
+  align-self: center;
+}
